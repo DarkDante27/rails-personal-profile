@@ -1,1 +1,12 @@
-<%= image_tag 'under_construction.gif', id: 'construction_gif'  %>
+<%= render 'navbar' %>
+<div class="container d-flex flex-column bd-highlight mb-3 head-container">
+  <h1 id="main-header">Paulo Rivera</h1>
+  <%= image_tag 'pp.jpg', id: 'header-avatar' %>
+  <h2 class="main-header-sub">Full-Stack Web Developer</h2>
+  <h4 class="main-header-sub">Based in Tokyo, Persuing my passion to become a great developer and Help people with their businesses!</h4>
+  <div class="more-button">
+  <%= link_to image_tag("more_arrow.svg", anchor: "projects_div", id: 'more-button-img') %>
+  </div>
+</div>
+<div id="projects-div">
+</div>

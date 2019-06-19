@@ -1,0 +1,28 @@
+.head-container {
+  align-items: center;
+}
+
+#main-header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 800;
+}
+
+.main-header-sub {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+ h2.main-header-sub {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+  }
+
+#header-avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
