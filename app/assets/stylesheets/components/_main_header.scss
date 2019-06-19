@@ -12,6 +12,8 @@
 }
 
 .main-header-sub {
+  margin-top: 50px;
+  margin-bottom: 40px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
@@ -25,4 +27,9 @@
   height: 200px;
   width: 200px;
   border-radius: 100%;
+}
+
+.main-header-p {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
 }
