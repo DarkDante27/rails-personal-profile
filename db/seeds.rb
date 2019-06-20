@@ -1,7 +1,39 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+puts 'This seed file will add some of my projects'
+puts 'These projects are just for testing, and will get more data after front end works.'
+
+
+puts 'Deleting all older projects....'
+
+Project.destroy_all
+
+puts 'now adding new projects'
+
+titles = ['Dream-OM', 'Obbis', 'Cocktail Nebula', 'Profile page']
+index_increment = 0
+
+4.times do
+  Project.create!(
+    title: titles[index_increment],
+    description: Faker::Lorem.paragraphs
+    )
+  index_increment += 1
+end
+
+puts 'Adding urls to the projects....'
+
+dream = Project.where(title: 'Dream-OM')
+dream.first.photos = ['https://res.cloudinary.com/dduochwyb/image/upload/v1561003947/My%20Website%20photos/dream-om_1_zwpmrw.png', 'https://res.cloudinary.com/dduochwyb/image/upload/v1561003945/My%20Website%20photos/dream-om_2_vxlftd.png', 'https://res.cloudinary.com/dduochwyb/image/upload/v1561003945/My%20Website%20photos/dream-om_3_x4yka5.png']
+dream.first.save
+obbis = Project.where(title: 'Obbis')
+obbis.first.photos = ['https://res.cloudinary.com/dduochwyb/image/upload/v1561003946/My%20Website%20photos/obbis_v7xruy.png']
+obbis.first.save
+cocktail = Project.where(title: 'Cocktail Nebula')
+cocktail.first.photos = ['https://res.cloudinary.com/dduochwyb/image/upload/v1561003945/My%20Website%20photos/cocktail_fkgmi2.png']
+cocktail.first.save
+profile = Project.where(title: 'Profile page')
+profile.first.photos = ['https://res.cloudinary.com/dduochwyb/image/upload/v1561003945/My%20Website%20photos/html_profile_wxzulh.png']
+profile.first.save
+
+puts 'Finished!'
