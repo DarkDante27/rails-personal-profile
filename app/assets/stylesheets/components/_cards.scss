@@ -1,18 +1,41 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
 }
 
-.card-category {
-  height: 463px;
-  width: 700px;
+.home-card-light {
+  height: 430px;
+  width: 720px;
   background-size: contain;
+  background-repeat: round;
+  &:hover {
+  }
 }
 
 .projects-div {
   margin: 0px;
 }
+
+.index-card-link {
+  text-decoration: none;
+ &:hover {
+  text-decoration: none;
+  }
+}
+
+// .card-title {
+//   margin-right: auto;
+//   margin-left: auto;
+//   font-family: 'Roboto', sans-serif;
+//   font-weight: 900;
+//   &:hover {
+//   opacity: 1 !important;
+//   color: red;
+//   }
+// }
+
+
+
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
