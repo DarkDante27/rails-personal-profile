@@ -4,10 +4,18 @@
   grid-gap: 16px;
 }
 
-.card-category {
-  height: 463px;
-  width: 700px;
+.home-card {
+  height: 430px;
+  width: 712px;
   background-size: contain;
+  background-repeat: round;
+  &:hover {
+    background-attachment: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    height: 430px;
+    width: 712px;
+    background-size: contain;
+    background-repeat: round;
+  }
 }
 
 .projects-div {

@@ -1,3 +1,5 @@
- <div class="col card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= project.photos.first %>)">
+ <%= link_to page_path(project) do %>
+ <div class="col card-category home-card" style="background-image: url(<%= project.photos.first %>)">
   <%= project.title %>
   </div>
+<% end %>
