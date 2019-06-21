@@ -1,26 +1,41 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
 }
 
-.home-card {
+.home-card-light {
   height: 430px;
-  width: 712px;
+  width: 720px;
   background-size: contain;
   background-repeat: round;
   &:hover {
-    background-attachment: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
-    height: 430px;
-    width: 712px;
-    background-size: contain;
-    background-repeat: round;
   }
 }
 
 .projects-div {
   margin: 0px;
 }
+
+.index-card-link {
+  text-decoration: none;
+ &:hover {
+  text-decoration: none;
+  }
+}
+
+// .card-title {
+//   margin-right: auto;
+//   margin-left: auto;
+//   font-family: 'Roboto', sans-serif;
+//   font-weight: 900;
+//   &:hover {
+//   opacity: 1 !important;
+//   color: red;
+//   }
+// }
+
+
+
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
