@@ -11,6 +11,17 @@ const loadMoreProjects = () => {
 }
 }
 
-export { loadMoreProjects  };
+const goToContact = () => {
+  const contactLink = document.querySelector('#projects-link')
+  if (contactLink) {
+      contactLink.addEventListener('click', (e) => {
+        e.preventDefault();
+      const contact = document.querySelector('#contact');
+      contact.scrollIntoView({ behavior: 'smooth' });
+    })
+}
+}
+
+export { loadMoreProjects, goToContact  };
 
 
