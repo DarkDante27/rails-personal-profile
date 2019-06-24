@@ -18,3 +18,27 @@
    text-decoration: none;
   }
 }
+
+#projects-link {
+  text-decoration: none;
+  text-align: center;
+  padding: 8px;
+}
+
+#projects-link a {
+  color: #6c757d;
+  &:hover {
+  color: #4C4C4C;
+  text-decoration: none;
+  }
+}
+
+.social-icon img {
+  height: 150px;
+  width: 150px;
+}
+
+.contact-section {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
