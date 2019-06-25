@@ -22,6 +22,17 @@ const goToContact = () => {
 }
 }
 
-export { loadMoreProjects, goToContact  };
+const goToForm = () => {
+  const emailIcon = document.querySelector('.email-icon')
+  if (emailIcon) {
+      emailIcon.addEventListener('click', (e) => {
+        e.preventDefault();
+      const contactForm = document.querySelector('.contact-form');
+      contactForm.scrollIntoView({ behavior: 'smooth' });
+    })
+}
+}
+
+export { loadMoreProjects, goToContact, goToForm  };
 
 
