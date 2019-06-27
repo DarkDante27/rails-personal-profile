@@ -1,0 +1,28 @@
+<div class="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm social-icon">
+        <%= link_to( image_tag('github-sign.svg'), 'https://github.com/DarkDante27', target: :blank) %>
+      </div>
+
+      <div class="col-sm social-icon">
+        <%= link_to( image_tag('linkedin.svg'), 'https://www.linkedin.com/in/pauloovallerivera', target: :blank) %>
+      </div>
+
+      <div class="col-sm social-icon">
+        <%= link_to( image_tag('instagram.svg'), 'https://www.instagram.com/darkdante28', target: :blank) %>
+      </div>
+
+      <div class="col-sm social-icon">
+        <%= link_to( image_tag('twitter.svg'), 'https://twitter.com/josepauloovall3', target: :blank) %>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  ScrollReveal({ reset: true });
+  ScrollReveal().reveal('.contact-section');
+  ScrollReveal().reveal('.social-icon', { delay: 150 });
+</script>
