@@ -1,4 +1,4 @@
- <%= link_to page_path(project), class: 'index-card-link' do %>
+ <%= link_to project_path(project), class: 'index-card-link' do %>
   <div class="col d-flex align-content-center flex-wrap card-category home-card-light">
     <%= image_tag(project.photos.first, size: "720x430")  %>
     <h2 class="card-title d-flex align-items-start flex-column bd-highlight mb-3"><%= project.title %></h2>
