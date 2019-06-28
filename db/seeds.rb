@@ -31,7 +31,7 @@ end
 puts 'Adding urls to the projects....'
 
 dream = Project.where(title: 'Dream-OM')
-dream.first.photos = ['https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1561003947/My%20Website%20photos/dream-om_1_zwpmrw.png', 'ttps://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1561003945/My%20Website%20photos/dream-om_2_vxlftd.png', 'https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1561003945/My%20Website%20photos/dream-om_3_x4yka5.png']
+dream.first.photos = ['https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1561003947/My%20Website%20photos/dream-om_1_zwpmrw.png', 'https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1561003945/My%20Website%20photos/dream-om_2_vxlftd.png', 'https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1561003945/My%20Website%20photos/dream-om_3_x4yka5.png']
 dream.first.save
 obbis = Project.where(title: 'Obbis')
 obbis.first.photos = ['https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1561003946/My%20Website%20photos/obbis_v7xruy.png']
