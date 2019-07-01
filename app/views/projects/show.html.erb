@@ -1,29 +1,38 @@
 <%= render 'shared/navbar' %>
-<div class="container">
-  <div class="project-info d-flex justify-content-between align-content-center flex-wrap">
-    <div class="project-title d-flex align-items-center">
-      <%= @project.title %>
-    </div>
-      <div class="project-photos">
-        <div id="carouselExampleControls" class="carousel slide carousel" data-ride="carousel">
-          <div class="carousel-inner">
-            <% @project.photos.each_with_index do |photo, index| %>
-            <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
-              <img class="image-show-arc" src="<%= photo %>" alt="First slide">
-              <!-- <div class="image-show-arc" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= photo %>)">
-              </div> -->
-            </div>
-            <% end %>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon " aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-          </div>
-        </div>
-      </div>
+<div class="container container-background <%= @project.title.downcase.gsub(" ", "-") %>">
+  <div class="project-title d-flex justify-content-center">
+    <span><%= @project.title %></span>
   </div>
+  <div class="project-short-desc d-flex justify-content-center">
+    <span><%= @project.short_description %></span>
+  </div>
+</div>
+
+<div class="screenshots">
+  <h2>Screenshots</h2>
+</div>
+
+
+<div class="container show-<%=@project.title.downcase.gsub(" ", "-")%>">
+<div class="project-info d-flex justify-content-between align-content-center flex-wrap">
+  <div class="project-photos">
+    <div id="carouselExampleControls" class="carousel slide carousel" data-ride="carousel">
+      <div class="carousel-inner">
+        <% @project.photos.each_with_index do |photo, index| %>
+        <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+          <img class="image-show-arc" src="<%= photo %>" alt="First slide">
+        </div>
+        <% end %>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
 </div>

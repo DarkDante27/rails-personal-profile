@@ -2,7 +2,7 @@
  <div class="cards-container">
     <img src="<%= project.photos.first %>" class="card-image" style="width:100%">
       <div class="middle">
-        <div class="text"><%= project.title %></div>
+        <div class="text <%= project.title.downcase.gsub(" ", "-") %>"><%= project.title %></div>
       </div>
   </div>
 <% end %>

@@ -10,7 +10,7 @@ Project.destroy_all
 
 puts 'now adding new projects'
 
-titles = ['Dream-OM', 'Obbis', 'Cocktail Nebula']
+titles = ['Dream-Om', 'Obbis', 'Cocktail Nebula']
 descriptions = ["Im pretty sure you know how difficult and messy is to buy land or to get an architect, Looking to all those filters and possibilities is a headache. But that's why we decided to create Dream-Om, To help you find land and plots without having to click on all those filters that other websites throw at your face. if you decided your land or plot, what about if we present you with the best architects in london?, a totally optional feature let's you choose an architect to really build your dream home!.",
   "Obbis connects people who want to discover that creative passion hidden within, via short classes, with freelance artisans who have honed their skills over decades and not only that Obbis will help you to find those classes in english, perfect for foreigners on Tokyo!.",
   "Cocktail Nebula was created at Le Wagon coding bootcamp and was an exercise to apply all the Rails knownledge: CRUD actions, nested routes and photo uploading. This site will help you to create your favourite cocktail mixes where you can add doses and upload them in the website."
