@@ -49,8 +49,8 @@
   }
 
 .project-photos img {
-  height: 450px;
-  width: auto;
+  height: 100%;
+  width: 100%;
   margin-top: 150px;
   margin-bottom: 150px;
 }
@@ -61,8 +61,15 @@
 }
 
 .carousel-inner {
-  min-width: 400px;
-  max-width: 800px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.image-show-arc {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 
