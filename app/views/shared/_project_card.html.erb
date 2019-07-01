@@ -1,11 +1,14 @@
- <%= link_to project_path(project), class: 'index-card-link' do %>
-  <div class="col d-flex align-content-center flex-wrap card-category home-card-light">
-    <%= image_tag(project.photos.first, size: "720x430")  %>
-    <h2 class="card-title d-flex align-items-start flex-column bd-highlight mb-3"><%= project.title %></h2>
+ <%= link_to project_path(project) do %>
+ <div class="cards-container">
+    <img src="<%= project.photos.first %>" class="card-image" style="width:100%">
+      <div class="middle">
+        <div class="text"><%= project.title %></div>
+      </div>
   </div>
 <% end %>
 
 <script>
   ScrollReveal({ reset: true });
-  ScrollReveal().reveal('.index-card-link', { delay: 150 });
+  ScrollReveal().reveal('.cards-container', { delay: 150 });
 </script>
+
