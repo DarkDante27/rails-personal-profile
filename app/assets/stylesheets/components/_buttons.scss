@@ -33,6 +33,20 @@
   }
 }
 
+#about-me {
+  text-decoration: none;
+  text-align: center;
+  padding: 8px;
+}
+
+#about-me a {
+  color: #6c757d;
+  &:hover {
+  color: #4C4C4C;
+  text-decoration: none;
+  }
+}
+
 .social-icon img {
   height: 150px;
   width: 150px;
