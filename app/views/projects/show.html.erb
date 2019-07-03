@@ -8,6 +8,31 @@
   </div>
 </div>
 
+<div class="container info-cont">
+  <div class="project-headers">
+    <h1>Overview</h1>
+  </div>
+    <div class="project-descriptions">
+      <% ps = PragmaticSegmenter::Segmenter.new(text: @project.description) %>
+
+    <% ps.segment.each_slice(2) do |slice| %>
+      <p><%= slice.join ' ' %></p>
+    <% end %>
+    </div>
+</div>
+
+<div class="container info-cont">
+  <div class="project-head-right d-flex justify-content-end">
+      <h1>Development Notes</h1>
+  </div>
+  <span class="project-descriptions-right">
+      <% ps = PragmaticSegmenter::Segmenter.new(text: @project.dev_description) %>
+
+    <% ps.segment.each_slice(1) do |slice| %>
+      <p><%= slice.join ' ' %></p>
+    <% end %>
+</div>
+
 <div class="screenshots">
   <h2>Screenshots</h2>
 </div>
