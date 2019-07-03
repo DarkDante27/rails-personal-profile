@@ -27,20 +27,25 @@ const goToContact = () => {
         window.location.href = '/#contact'
       }
     })
-}
+  }
 }
 
-const goToForm = () => {
-  const emailIcon = document.querySelector('.email-icon')
-  if (emailIcon) {
-      emailIcon.addEventListener('click', (e) => {
+const goToAboutMe = () => {
+  const aboutMeLink = document.querySelector('#about-me')
+  if (aboutMeLink) {
+      aboutMeLink.addEventListener('click', (e) => {
         e.preventDefault();
-      const contactForm = document.querySelector('.contact-form');
-      contactForm.scrollIntoView({ behavior: 'smooth' });
+      const about = document.querySelector('#about');
+      if (about) {
+      about.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.location.href = '/#about'
+      }
     })
   }
 }
 
-export { loadMoreProjects, goToContact, goToForm  };
+
+export { loadMoreProjects, goToContact, goToAboutMe  };
 
 
