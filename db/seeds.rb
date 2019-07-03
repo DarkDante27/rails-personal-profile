@@ -20,13 +20,16 @@ short_descriptions = ["Dream-om will help you find Plots, houses and architects 
   "Find your hidden passion! with Obbis you can search english speaking classes in Tokyo.",
   "Create, Mix, Share your favorite cocktails with Cocktail Nebula."]
 
+urls = ["http://dream-om.co.uk/", "https://craft-workshops.herokuapp.com/", "https://cocktail-nebula.herokuapp.com/"]
+
 index_increment = 0
 
 3.times do
   Project.create!(
     title: titles[index_increment],
     description: descriptions[index_increment],
-    short_description: short_descriptions[index_increment]
+    short_description: short_descriptions[index_increment],
+    url: urls[index_increment]
     )
   index_increment += 1
 end

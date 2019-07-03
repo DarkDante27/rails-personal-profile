@@ -37,7 +37,6 @@
   <h2>Screenshots</h2>
 </div>
 
-
 <div class="container show-<%=@project.title.downcase.gsub(" ", "-")%>">
 <div class="project-info d-flex justify-content-between align-content-center flex-wrap">
   <div class="project-photos">
@@ -56,8 +55,20 @@
             <span class="carousel-control-next-icon " aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
+    <div class="d-flex justify-content-center">
+      <%= link_to @project.url, target: :blank do %>
+        <h1 id="url-head">Discover <%= @project.title %></h1>
+      <% end %>
+    </div>
+
+<script>
+  ScrollReveal({ reset: true });
+  ScrollReveal().reveal('.project-title', { delay: 150 });
+  ScrollReveal().reveal('.project-short-desc', { delay: 300 });
+  ScrollReveal().reveal('.info-cont', { delay: 375 });
+  ScrollReveal().reveal('#url-head', { delay: 450 });
+</script>
