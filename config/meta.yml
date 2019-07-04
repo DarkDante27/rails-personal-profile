@@ -1,0 +1,5 @@
+meta_product_name: "Jose Paulo Ovalle Rivera"
+meta_title: "Jose Paulo Ovalle Rivera - Let me Help you make your business grow!"
+meta_description: "Ruby on Rails web developer based in Tokyo"
+meta_image: "cover.png" # should exist in `app/assets/images/`
+twitter_account: "@josepauloovall3"   # required for Twitter Cards
