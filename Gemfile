@@ -15,6 +15,9 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'pragmatic_segmenter'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'bootstrap-sass'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
