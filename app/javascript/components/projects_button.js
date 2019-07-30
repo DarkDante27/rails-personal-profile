@@ -46,6 +46,6 @@ const goToAboutMe = () => {
 }
 
 
-export { loadMoreProjects, goToContact, goToAboutMe  };
+export { loadMoreProjects, goToContact, goToAboutMe };
 
 
