@@ -1,5 +1,3 @@
-require 'faker'
-
 puts 'This seed file will add some of my projects'
 puts 'These projects are just for testing, and will get more data after front end works.'
 
@@ -10,21 +8,22 @@ Project.destroy_all
 
 puts 'now adding new projects'
 
-titles = ['Dream-Om', 'Obbis', 'Cocktail Nebula']
+titles = ['Dream-Om', 'Obbis', 'Cocktail Nebula', 'Planet Gaze AR - Coming Soon!']
 descriptions = ["Im pretty sure you know how difficult and messy is to buy land or to get an architect, Looking to all those filters and possibilities is a headache. That's why we decided to create Dream-Om, to help you find land and plots without having to filter thousands of results that other websites just throw at your screen. And if you already chose land or a house, what about if we present you with the best architects in london? An optional feature lets you choose an architect to really help you build your dream home!.",
   "Obbis connects people who want to discover that creative passion hidden within, via short classes, with freelance artisans who have honed their skills over decades and not only that Obbis will help you to find those classes in english, perfect for foreigners on Tokyo!.",
-  "Cocktail Nebula was created at Le Wagon coding bootcamp and was an exercise to apply all the Rails knownledge: CRUD actions, nested routes and photo uploading. This site will help you to create your favourite cocktail mixes where you can add doses and upload them in the website."
+  "Cocktail Nebula was created at Le Wagon coding bootcamp and was an exercise to apply all the Rails knownledge: CRUD actions, nested routes and photo uploading. This site will help you to create your favourite cocktail mixes where you can add doses and upload them in the website.",
+  "Planet Gaze AR is being made for people who is curious about Space Exploration. Do you feel like you want to know more about the planets in our solar System? do you find exoplanets fascinating?, if your answers are yes, you need Planet gaze AR! the web app tha will let you see official 3D representations of the planets and exoplanets in AR. More information and screenshots coming soon!"
 ]
 
 short_descriptions = ["Dream-om will help you find Plots, houses and architects easy and fast without useless filters and most important, without wasting your time 😉",
   "Find your hidden passion! with Obbis you can search english speaking classes in Tokyo.",
-  "Create, Mix, Share your favorite cocktails with Cocktail Nebula."]
+  "Create, Mix, Share your favorite cocktails with Cocktail Nebula.", "This page will be updated soon! Please remember to come back for more information."]
 
-urls = ["http://dream-om.co.uk/", "https://craft-workshops.herokuapp.com/", "https://cocktail-nebula.herokuapp.com/"]
+urls = ["http://dream-om.co.uk/", "https://craft-workshops.herokuapp.com/", "https://cocktail-nebula.herokuapp.com/", ""]
 
 index_increment = 0
 
-3.times do
+4.times do
   Project.create!(
     title: titles[index_increment],
     description: descriptions[index_increment],
@@ -52,5 +51,10 @@ cocktail = Project.where(title: 'Cocktail Nebula')
 cocktail.first.photos = ['https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1561003945/My%20Website%20photos/cocktail_fkgmi2.png', 'https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1561965912/My%20Website%20photos/cocktail_2_jow03j.png', 'https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1561965916/My%20Website%20photos/cocktail_3_yuka6g.png', 'https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1561965912/My%20Website%20photos/cocktail_4_a0ti3p.png']
 cocktail.first.dev_description = "This Project was created in 3 days, I was the Project Manager, Part of Le Wagon exercises to implement Photo uploading with Cloudinary also made use of the rails CRUD actions. This Site was developed with Ruby on Rails, gems used: redis, webpacker, simple form, uglyfier, carrierwave, autoprefixer-rail, cloudinary"
 cocktail.first.save
+
+planet = Project.where(title: 'Planet Gaze AR - Coming Soon!')
+planet.first.photos = ['https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1564461563/My%20Website%20photos/Saturn_irldib.png','https://res.cloudinary.com/dduochwyb/image/upload/c_mpad,h_480,q_100,w_640/v1564461617/My%20Website%20photos/Saturn-logo_uqmeo1.gif']
+planet.first.dev_description = "Working project, More information Coming soon!"
+planet.first.save
 
 puts 'Finished!'
