@@ -18,7 +18,7 @@ descriptions = ["Im pretty sure you know how difficult and messy is to buy land 
 
 short_descriptions = ["Dream-om will help you find Plots, houses and architects easy and fast without useless filters and most important, without wasting your time 😉",
   "Find your hidden passion! with Obbis you can search english speaking classes in Tokyo.",
-  "'A penny for your thoughts', that's what people say in Hashable, Find out what the world is talking about!"
+  "'A penny for your thoughts', that's what people say in Hashable, Find out what the world is talking about!",
   "Create, Mix, Share your favorite cocktails with Cocktail Nebula.", "This page will be updated soon! Please remember to come back for more information."]
 
 urls = ["https://dream-om-2.herokuapp.com/", "https://craft-workshops.herokuapp.com/", "https://cocktail-nebula.herokuapp.com/", "https://github.com/paulorivera27/hashable", ""]
